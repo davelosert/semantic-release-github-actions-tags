@@ -6,7 +6,7 @@ This is a best practice for releasing GitHub Actions as also described in the [G
 
 This plugin is supposed to be used in conjunction with the [`@semantic-release/git`](https://github.com/semantic-release/git) and [`@semantic-release/github`](https://github.com/semantic-release/github) plugins so that both, the `dist` files of your action are pushed and a release is created.
 
-> *Warning*
+> **Warning**
 > As this plugin is built to be used with those plugins, there is currently no verification step as this would just duplicate all required verifications (that is the existence of a `GITHUB_TOKEN` and the permission to `git push`).
 
 ## Installation
@@ -67,5 +67,7 @@ jobs:
         run: npm run build
       ## With the above semantic-release configuration, will create a release and push the dist/index.js file as well as all the tags required
       - name: Semantic Release
-        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npx semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
