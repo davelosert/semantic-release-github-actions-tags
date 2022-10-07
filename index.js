@@ -1,11 +1,11 @@
-const { createPrepare } = require('./lib/prepare');
+const { createPublish } = require('./lib/publish');
 const { git }  = require('./lib/git');
 
-const prepareTags = createPrepare(git);
-async function prepare(pluginConfig, context) { 
-  await prepareTags(pluginConfig, context);
+const publishTags = createPublish(git);
+async function publish(pluginConfig, context) { 
+  await publishTags(pluginConfig, context);
 }
 
 module.exports = {
-  prepare
+  publish
 };
