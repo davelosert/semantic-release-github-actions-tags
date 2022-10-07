@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-github-actions-tags",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Semantic Release Plugin to update all version Tags for a GitHub Action during a release",
   "main": "index.js",
   "contributors": [
@@ -14,14 +14,20 @@
     "type": "git",
     "url": "git+https://github.com/davelosert/semantic-release-github-actions-tags.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "semantic-release",
+    "git",
+    "github",
+    "actions",
+    "release"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davelosert/semantic-release-github-actions-tags/issues"
   },
   "homepage": "https://github.com/davelosert/semantic-release-github-actions-tags#readme",
   "devDependencies": {
+    "@semantic-release/git": "10.0.1",
     "@vitest/coverage-c8": "0.23.4",
     "vitest": "0.23.4"
   },
