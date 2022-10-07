@@ -6,6 +6,6 @@ async function prepare(pluginConfig, context) {
   await prepareTags(context, pluginConfig);
 }
 
-module.expors = {
+module.exports = {
   prepare
 };
