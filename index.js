@@ -3,7 +3,7 @@ const { git }  = require('./lib/git');
 
 const prepareTags = createPrepare(git);
 async function prepare(pluginConfig, context) { 
-  await prepareTags(context, pluginConfig);
+  await prepareTags(pluginConfig, context);
 }
 
 module.exports = {
