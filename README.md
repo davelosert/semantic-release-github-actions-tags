@@ -39,11 +39,10 @@ You can use the above configuration in a GitHub workflow like this:
 
 ```yaml
 name: Release
-  
-## release whenever the rebuild action finished succesfuly
+
 on:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
