@@ -1,7 +1,11 @@
-async function publish(pluginConfig, context) { 
-  await publish(context, pluginConfig);
+const { createPrepare } = require('./lib/prepare');
+const { git }  = require('./lib/git');
+
+const prepareTags = createPrepare(git);
+async function prepare(pluginConfig, context) { 
+  await prepareTags(context, pluginConfig);
 }
 
 module.expors = {
-  publish
+  prepare
 };
