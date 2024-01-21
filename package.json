@@ -30,7 +30,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.6",
     "@vitest/coverage-c8": "0.23.4",
-    "semantic-release": "19.0.5",
+    "semantic-release": "21.0.1",
     "vitest": "0.23.4"
   },
   "dependencies": {
