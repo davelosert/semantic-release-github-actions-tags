@@ -11,6 +11,3 @@ jobs:
       - uses: actions/setup-node@v4
       - run: npm ci
       - run: npm run test:ci
-      - name: 'Report Coverage'
-        if: always() # Also generate the report if tests are failing
-        uses:  davelosert/vitest-coverage-report-action@v2
