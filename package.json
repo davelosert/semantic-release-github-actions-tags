@@ -3,12 +3,13 @@
   "version": "1.0.3",
   "description": "Semantic Release Plugin to update all version Tags for a GitHub Action during a release",
   "main": "index.js",
+  "type": "module",
   "contributors": [
     "David Losert <david@david-losert.com>"
   ],
   "scripts": {
     "test": "vitest",
-    "test:ci": "vitest"
+    "test:ci": "vitest --coverage.enabled"
   },
   "repository": {
     "type": "git",
