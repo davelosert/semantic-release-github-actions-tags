@@ -4,11 +4,11 @@
   "description": "Semantic Release Plugin to update all version Tags for a GitHub Action during a release",
   "main": "index.js",
   "contributors": [
-    "David Losert <david@david-losert.com> (https://twitter.com/davelosert)"
+    "David Losert <david@david-losert.com>"
   ],
   "scripts": {
     "test": "vitest",
-    "test:ci": "vitest --coverage"
+    "test:ci": "vitest"
   },
   "repository": {
     "type": "git",
@@ -28,12 +28,12 @@
   "homepage": "https://github.com/davelosert/semantic-release-github-actions-tags#readme",
   "devDependencies": {
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.0.6",
-    "@vitest/coverage-c8": "0.23.4",
-    "semantic-release": "21.0.1",
-    "vitest": "0.23.4"
+    "@semantic-release/github": "10.1.7",
+    "@vitest/coverage-v8": "2.0.5",
+    "semantic-release": "24.1.0",
+    "vitest": "2.0.5"
   },
   "dependencies": {
-    "@semantic-release/error": "3.0.0"
+    "@semantic-release/error": "4.0.0"
   }
 }
