@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-github-actions-tags",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Semantic Release Plugin to update all version Tags for a GitHub Action during a release",
   "main": "index.js",
   "contributors": [
