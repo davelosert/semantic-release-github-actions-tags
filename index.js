@@ -1,5 +1,5 @@
-import { createPublish } from './lib/publish';
-import { git } from './lib/git';
+import { createPublish } from './lib/publish.js';
+import { git } from './lib/git.js';
 
 const publishTags = createPublish(git);
 async function publish(pluginConfig, context) { 
